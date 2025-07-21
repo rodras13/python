@@ -15,11 +15,14 @@ target = 7
 
 def two_sums(nums, target):
   for i in range(len(nums)):
-    for j in range(len(nums)):
-        
+    # La función range permite como primer parámetro empezar desde un lugar determinado
+    # En este caso, como el primer elemento no nos interesa (y los sucesivos), cogemos directamente
+    # el rango desde el siguiente.
+    # En el ejemplo, en la primera iteración, i = 0, por lo que j puede ir en rango j = i + 1 (1) hasta el final
+    for j in range(i + 1, len(nums)):
+
       if((nums[i] + nums[j]) == target):
-        if(j == i):
-          continue
+        
         return [i, j]
   print("No results")
 print(two_sums(nums, target))
