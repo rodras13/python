@@ -16,3 +16,5 @@ def is_palindrome(interger):
   return "true"
 
 print(is_palindrome(x))
+
+# ✅ Reolved in 16ms

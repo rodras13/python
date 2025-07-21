@@ -26,3 +26,5 @@ def two_sums(nums, target):
         return [i, j]
   print("No results")
 print(two_sums(nums, target))
+
+# ✅ Resolved in 1768ms
